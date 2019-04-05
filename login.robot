@@ -6,7 +6,7 @@ Suite Teardown   Log   This is a suite teardown
 Test Setup    Log   This is a test setup 
 Test Teardown   Log   This is a test teardown
 
-Default Tags       sanity
+# Default Tags       sanity
 
 *** Variables ***
 ${url}     https://opensource-demo.orangehrmlive.com/
@@ -19,7 +19,7 @@ ${url2}    http://spandana.globaledgesoft.com
 
 ** Test Cases ***
 session
-    [Tags]    smoke   sanity
+    # [Tags]    smoke   sanity
     Open Browser    ${url}   chrome
     Set Browser Implicit Wait    3
     Maximize Browser Window
@@ -31,7 +31,7 @@ session
     Close Browser        
  
 Gmail
-    [Tags]    functional
+    # [Tags]    functional
     Open Browser        ${url1}    chrome
     Input Text     name=q    robot framework
     Set Browser Implicit Wait    3
@@ -42,7 +42,7 @@ Gmail
     Set Tags     regression
     
 Login    
-    [Tags]    smoke
+    # [Tags]    smoke
     Open Browser     ${url2}    chrome
     Input Text    id=username    vh.nikitha
     Input Password    id=password    nikitha22
