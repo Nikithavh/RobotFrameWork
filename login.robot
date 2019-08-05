@@ -1,5 +1,5 @@
 *** Settings ***
-Library     SeleniumLibrary    
+Library     Selenium2Library    
 
 Suite Setup      Log    This is a suite setup
 Suite Teardown   Log   This is a suite teardown
